@@ -47,3 +47,7 @@ Thumbs.db
 # User data
 videos.txt
 !videos.txt.example
+
+# YouTube API credentials
+token.json
+credentials.json
