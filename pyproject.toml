@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "youtube-utils"
+version = "0.1.0"
+description = "YouTube utilities for playlist management and video operations"
+authors = ["Alex <alex@example.com>"]
+readme = "README.md"
+packages = [{include = "playlist_importer", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+google-api-python-client = "^2.108.0"
+google-auth-oauthlib = "^1.2.0"
+google-auth-httplib2 = "^0.2.0"
+
+[tool.poetry.scripts]
+playlist-import = "playlist_importer.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
