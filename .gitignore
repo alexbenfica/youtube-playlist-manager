@@ -22,7 +22,7 @@ wheels/
 *.egg
 
 # Poetry
-poetry.lock
+# poetry.lock  # Actually, this should be committed for reproducible builds
 
 # Virtual environments
 venv/
